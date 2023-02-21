@@ -181,9 +181,18 @@ For existing repositories, if you already added the origin using the username, r
 
 ``git remote remove origin``
 
-Otherwise, run the following command.
+Otherwise, run the following commands.
 
-``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
+``git remote add origin https://<PAT>@dev.azure.com/<Organization>/<Project>/_git/<Repo>``
+
+``git push -u origin --all``
+
+Sample:
+```cmd
+git remote add origin https://llb2agg5vg6hdkdrfocz77kymvk5cotyj6wvpyeup3zzzzzzzzzz@dev.azure.com/MyOrg/MyProject/_git/MyRepo
+git push -u origin --all
+```
+
 
 ### Use a PAT in your code
 
